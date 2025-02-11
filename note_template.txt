@@ -1,0 +1,9 @@
+- Không dòng trống
+- Không có dấu ,
+- đã có lệch điều khiển thì phải đi kèm với loại điều khiển (onoff,custom...)
+- thông tin chữ tương ứng với số ở cột control value phải trùng với cột uint
+- điều khiển dạng custom thì có thể thêm min và max, custom:min:max
+- add thiết bị lên server kết nối wifi trước, hiện lên mqtt thì gửi lệnh sau 
+"setid:producID,mqttpass"
+"seturl:"
+"setproject:"

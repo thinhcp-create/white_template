@@ -1,0 +1,93 @@
+﻿#for mcu,,,,,,,,,,,,,,,,,,,,
+3,0,64,,,,,,,,,,,,,,,,,,
+#for backend,param code,Unit,Start Reg Address (-1 if not modbus related; Dont leave blank),End Reg Address (Dont leave blank),Bit Start (-1 if not used; Dont leave blank),Bit End (Dont leave blank),Data type (0:int; 1:float; Dont leave blank),Byte order (Dont leave blank),x max (Dont leave blank),x min (Dont leave blank),y max (Dont leave blank),y min (Dont leave blank),high threshold (Dont leave blank),low threshold (Dont leave blank),control value (String),"control (String;  c:<cmd5,6>:<register address>:<value>:<delay>; c:<cmd16>:<start_reg>:<quantity>:<target_reg>:<value>:<delay>;)",control type (onoff;custom),user access (0: hidden; 1:Read; 2:RW;Dont leave blank),critical warning (1:enable; 0:disable) (Dont leave blank),category (String)
+Mode,,1:manual;2:auto,1,1,0,1,0,0,1,0,1,0,0,0,0:manual;65280:auto,c:5:80:{0}:0;,onoff,2,0,Device Mode
+Undervoltage alarm,,0:false;1:true,1,1,2,2,0,0,1,0,1,0,0,0,,,,1,1,Alarms And Warnings
+Overvoltage alarm,,0:false;1:true,1,1,3,3,0,0,1,0,1,0,0,0,,,,1,1,Alarms And Warnings
+Out of Phase alarm,,0:false;1:true,1,1,4,4,0,0,1,0,1,0,0,0,,,,1,1,Alarms And Warnings
+Frequent start-up alarm,,0:false;1:true,1,1,5,5,0,0,1,0,1,0,0,0,,,,1,1,Alarms And Warnings
+Pump A operating ,,0:Off;1:On,1,1,6,6,0,0,1,0,1,0,0,0,0:Off;65280:On,c:5:81:{0}:0;,onoff,0,0,
+Pump B operating ,,0:Off;1:On,1,1,7,7,0,0,1,0,1,0,0,0,0:Off;65280:On,c:5:82:{0}:0;,onoff,0,0,
+Shutdown pressure ,,0:false;1:true,1,1,10,10,0,0,1,0,1,0,0,0,,,,0,0,
+Overflow Alarm,,0:false;1:true,1,1,11,11,0,0,1,0,1,0,0,0,,,,1,1,Inputs
+Pump B Stall ,,0:false;1:true,2,2,2,2,0,0,1,0,1,0,0,0,,,,1,1,Pump B Warnings and alarms
+Dry Run pump B,,0:false;1:true,2,2,3,3,0,0,1,0,1,0,0,0,,,,1,1,Pump B Warnings and alarms
+Under voltage pump B,,0:false;1:true,2,2,4,4,0,0,1,0,1,0,0,0,,,,1,1,Pump B Warnings and alarms
+Over temp pump B,,0:false;1:true,2,2,7,7,0,0,1,0,1,0,0,0,,,,1,1,Pump B Warnings and alarms
+Over load pump A,,0:false;1:true,2,2,9,9,0,0,1,0,1,0,0,0,,,,1,1,Pump A Warnings and alarms 
+Pump A Stall,,0:false;1:true,2,2,10,10,0,0,1,0,1,0,0,0,,,,1,1,Pump A Warnings and alarms 
+Dry Run pump A,,0:false;1:true,2,2,11,11,0,0,1,0,1,0,0,0,,,,1,1,Pump A Warnings and alarms 
+Under voltage pump A,,0:false;1:true,2,2,12,12,0,0,1,0,1,0,0,0,,,,1,1,Pump A Warnings and alarms 
+Over temp pump A,,0:false;1:true,2,2,15,15,0,0,1,0,1,0,0,0,,,,1,1,Pump A Warnings and alarms 
+Voltage,,V,3,3,-1,0,0,0,1,0,1,0,0,0,,,,1,0,Key Metrics
+Total Current,,A,4,4,-1,0,0,0,10,0,1,0,0,0,,,,1,0,Key Metrics
+Pump A current,,A,5,5,-1,0,0,0,10,0,1,0,0,0,,,,1,0,Key Metrics
+Pump B current,,A,6,6,-1,0,0,0,10,0,1,0,0,0,,,,1,0,Key Metrics
+Reg 7,,,7,7,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
+Reg 8,,,8,8,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
+Reg 9,,,9,9,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
+Reg 10,,,10,10,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
+Overflow level setting,,,11,11,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
+Reg 12,,,12,12,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
+Reg 13,,,13,13,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
+Reg 14,,,14,14,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
+Reg 15,,,15,15,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
+A pump operation time,,minutes,16,16,-1,0,0,0,1,0,60,0,0,0,,,,1,0,Technical Data 
+B  pump operation time,,minutes,17,17,-1,0,0,0,1,0,60,0,0,0,,,,1,0,Technical Data 
+Last failed 1,,,18,18,-1,0,0,0,1,0,1,0,0,0,,,,1,0,Technical Data 
+Last failed 2,,,19,19,-1,0,0,0,1,0,1,0,0,0,,,,1,0,Technical Data 
+Last failed 3,,,20,20,-1,0,0,0,1,0,1,0,0,0,,,,1,0,Technical Data 
+Last failed 4,,,21,21,-1,0,0,0,1,0,1,0,0,0,,,,1,0,Technical Data 
+Last failed 5,,,22,22,-1,0,0,0,1,0,1,0,0,0,,,,1,0,Technical Data 
+Reg 23,,,23,23,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
+Reg 24,,,24,24,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
+Reg 25,,,25,25,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
+Reg 26,,,26,26,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
+Reg 27,,,27,27,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
+Reg 28,,,28,28,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
+Start filter time,,seconds,29,29,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:29:{0}:0;,custom,0,0,
+Freq start count,,,30,30,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:30:{0}:0;,custom,0,0,
+Over temp protection,,0:Off;1:On,31,31,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:31:{0}:0;,onoff,2,0,Expert List
+Pump enable/disable,,0: disable;1:auto;2:manual,34,34,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:34:{0}:0;,custom,0,0,
+Reg 35,,,35,35,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
+Reg 36,,,36,36,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
+Anti seize setting,,hours,37,37,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:37:{0}:0;,custom,0,0,
+Start delay setting,,seconds,38,38,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:38:{0}:0;,custom,0,0,
+Shutdown delay setting,,seconds,39,39,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:39:{0}:0;,custom,0,0,
+Reg 40,,,40,40,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
+Fault recovery time,,hours,41,41,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:41:{0}:0;,custom,0,0,
+Auto key lock,,0:Off;1:On,42,42,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:42:{0}:0;,onoff,0,0,
+Reg 43,,,43,43,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
+Reg 44,,,44,44,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
+Reg 45,,,45,45,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
+Manual Start Pump,,,46,46,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:46:{0}:0;,custom,2,0,Device Mode
+Reg 47,,,47,47,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
+Run dry load setting,,%,48,48,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:48:{0}:0;,custom,2,0,User List
+Overload load setting,,%,49,49,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:49:{0}:0;,custom,2,0,User List
+Stall Ratio Load,,%,50,50,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:50:{0}:0;,custom,2,0,User List
+Undervoltage setting,,V,52,52,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:52:{0}:0;,custom,2,0,User List
+Overvoltage setting,,V,53,53,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:53:{0}:0;,custom,2,0,User List
+Run dry delay time ,,seconds,54,54,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:54:{0}:0;,custom,2,0,User List
+Run dry recovery time,,minutes,55,55,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:55:{0}:0;,custom,2,0,User List
+Overcurrent recovery time,,minutes,56,56,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:56:{0}:0;,custom,2,0,User List
+General recovery time,,minutes,57,57,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:57:{0}:0;,custom,2,0,User List
+Sensor Range,,cm,58,58,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:58:{0}:0;,custom,0,0,
+Stop pump setting,,CM/Bar,59,59,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:59:{0}:0;,custom,0,0,
+Start single pump settings,,CM/Bar,60,60,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:60:{0}:0;,custom,0,0,
+Reg 61,,,61,61,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
+Start Dual Pump Setup,,CM/Bar,62,62,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:62:{0}:0;,custom,0,0,
+Overflow alarm ,,CM/Bar,63,63,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:63:{0}:0;,custom,0,0,
+IoT Dry Output 1,DO1,0:off;1:on,-1,0,-1,0,0,0,1,0,1,0,0,0,,c:do1:{0},onoff,0,0,
+IoT Dry Output 2,DO2,0:off;1:on,-1,0,-1,0,0,0,1,0,1,0,0,0,,c:do2:{0},onoff,0,0,
+IoT Dry Output 3,DO3,0:off;1:on,-1,0,-1,0,0,0,1,0,1,0,0,0,,c:do3:{0},onoff,0,0,
+IoT Dry Output 4,DO4,0:off;1:on,-1,0,-1,0,0,0,1,0,1,0,0,0,,c:do4:{0},onoff,0,0,
+IoT Dry Input 1,DI1,,-1,0,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
+IoT Dry Input 2,DI2,,-1,0,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
+IoT Dry Input 3,DI3,,-1,0,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
+IoT Dry Input 4,DI4,,-1,0,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
+IoT esp runtime,ESPU,Hours,-1,0,-1,0,0,0,3600,0,1,0,0,0,,,,0,0,
+IoT mcu runtime,MCUU,Hours,-1,0,-1,0,0,0,3600,0,1,0,0,0,,,,0,0,
+IoT mcu fw,MFW,,-1,0,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
+IoT mcu hw,HW,,-1,0,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
+IoT esp fw,EFW,,-1,0,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
+IoT update rate,UPR,Second,-1,0,-1,0,0,0,1,0,1,0,0,0,,c:uprate:{0},custom,2,0,Expert List
