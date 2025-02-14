@@ -51,40 +51,40 @@ Reg 26,,,26,26,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
 Reg 27,,,27,27,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
 Reg 28,,,28,28,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
 Start filter time,,seconds,29,29,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:29:{0}:0;,custom:1:60,0,0,
-Freq start count,,,30,30,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:30:{0}:0;,custom,0,0,
+Freq start count,,,30,30,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:30:{0}:0;,custom:0:50,0,0,
 Over temp protection,,0:Off;1:On,31,31,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:31:{0}:0;,onoff,2,0,Expert List
 Phase error protection,,0:Off;1:On,32,32,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:32:{0}:0;,onoff,2,0,Expert List
 Phase loss protection,,0:Off;1:On,33,33,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:33:{0}:0;,onoff,2,0,Expert List
-Pump enable/disable,,0: disable;1:auto;2:manual,34,34,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:34:{0}:0;,custom,0,0,
+Pump enable/disable,,0: disable;1:auto;2:manual,34,34,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:34:{0}:0;,custom:0:2,0,0,
 Reg 35,,,35,35,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
 Reg 36,,,36,36,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
-Anti seize setting,,hours,37,37,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:37:{0}:0;,custom,0,0,
-Start delay setting,,seconds,38,38,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:38:{0}:0;,custom,0,0,
-Shutdown delay setting,,seconds,39,39,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:39:{0}:0;,custom,0,0,
+Anti seize setting,,hours,37,37,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:37:{0}:0;,custom:0:254,0,0,
+Start delay setting,,seconds,38,38,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:38:{0}:0;,custom:0:120,0,0,
+Shutdown delay setting,,seconds,39,39,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:39:{0}:0;,custom:0:120,0,0,
 Reg 40,,,40,40,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
-Fault recovery time,,hours,41,41,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:41:{0}:0;,custom,0,0,
+Fault recovery time,,hours,41,41,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:41:{0}:0;,custom:0:24,0,0,
 Auto key lock,,0:Off;1:On,42,42,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:42:{0}:0;,onoff,0,0,
 Reg 43,,,43,43,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
 Reg 44,,,44,44,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
 Reg 45,,,45,45,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
-Manual Start Pump,,,46,46,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:46:{0}:0;,custom,2,0,Device Mode
+Manual Start Pump,,,46,46,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:46:{0}:0;,custom:0:999,2,0,Device Mode
 Reg 47,,,47,47,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
-Run dry load setting,,%,48,48,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:48:{0}:0;,custom,2,0,User List
-Overload load setting,,%,49,49,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:49:{0}:0;,custom,2,0,User List
-Stall Ratio Load,,%,50,50,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:50:{0}:0;,custom,2,0,User List
-3-ph unbalance setting,,%,51,51,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:51:{0}:0;,custom,2,0,User List
-Undervoltage setting,,V,52,52,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:52:{0}:0;,custom,2,0,User List
-Overvoltage setting,,V,53,53,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:53:{0}:0;,custom,2,0,User List
-Run dry delay time ,,seconds,54,54,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:54:{0}:0;,custom,2,0,User List
-Run dry recovery time,,minutes,55,55,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:55:{0}:0;,custom,2,0,User List
-Overcurrent recovery time,,minutes,56,56,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:56:{0}:0;,custom,2,0,User List
-General recovery time,,minutes,57,57,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:57:{0}:0;,custom,2,0,User List
-Sensor Range,,cm,58,58,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:58:{0}:0;,custom,0,0,
-Stop pump setting,,CM/Bar,59,59,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:59:{0}:0;,custom,0,0,
-Start single pump settings,,CM/Bar,60,60,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:60:{0}:0;,custom,0,0,
+Run dry load setting,,%,48,48,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:48:{0}:0;,custom:0:200,2,0,User List
+Overload load setting,,%,49,49,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:49:{0}:0;,custom:0:200,2,0,User List
+Stall Ratio Load,,%,50,50,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:50:{0}:0;,custom:0:200,2,0,User List
+3-ph unbalance setting,,%,51,51,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:51:{0}:0;,custom:0:500,2,0,User List
+Undervoltage setting,,V,52,52,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:52:{0}:0;,custom:0:312,2,0,User List
+Overvoltage setting,,V,53,53,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:53:{0}:0;,custom:0:538,2,0,User List
+Run dry delay time ,,seconds,54,54,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:54:{0}:0;,custom:0:60,2,0,User List
+Run dry recovery time,,minutes,55,55,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:55:{0}:0;,custom:0:254,2,0,User List
+Overcurrent recovery time,,minutes,56,56,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:56:{0}:0;,custom:0:60,2,0,User List
+General recovery time,,minutes,57,57,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:57:{0}:0;,custom:0:60,2,0,User List
+Sensor Range,,cm,58,58,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:58:{0}:0;,custom:0:999,0,0,
+Stop pump setting,,CM/Bar,59,59,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:59:{0}:0;,custom:0:999,0,0,
+Start single pump settings,,CM/Bar,60,60,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:60:{0}:0;,custom:0:999,0,0,
 Reg 61,,,61,61,-1,0,0,0,1,0,1,0,0,0,,,,0,0,
-Start Dual Pump Setup,,CM/Bar,62,62,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:62:{0}:0;,custom,0,0,
-Overflow alarm ,,CM/Bar,63,63,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:63:{0}:0;,custom,0,0,
+Start Dual Pump Setup,,CM/Bar,62,62,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:62:{0}:0;,custom:0:999,0,0,
+Overflow alarm ,,CM/Bar,63,63,-1,0,0,0,1,0,1,0,0,0,,c:16:29:34:63:{0}:0;,custom:0:999,0,0,
 IoT Dry Output 1,DO1,0:off;1:on,-1,0,-1,0,0,0,1,0,1,0,0,0,,c:do1:{0},onoff,0,0,
 IoT Dry Output 2,DO2,0:off;1:on,-1,0,-1,0,0,0,1,0,1,0,0,0,,c:do2:{0},onoff,0,0,
 IoT Dry Output 3,DO3,0:off;1:on,-1,0,-1,0,0,0,1,0,1,0,0,0,,c:do3:{0},onoff,0,0,
