@@ -7,3 +7,27 @@
 "setid:producID,mqttpass"
 "seturl:"
 "setproject:"
+
+- Cách export nhanh một sheet trong file .exls gồm nhiều sheet thành 1 file .csv nhanh
+	B1 : Nhấn Alt + F11 để mở VBA Editor.
+	B2 : Chọn Insert -> Module, dán code sau:
+Sub ExportActiveSheetToCSV()
+    Dim ws As Worksheet
+    Dim filePath As String
+    
+    ' Đặt tên file CSV và vị trí lưu
+    filePath = Application.ActiveWorkbook.Path & "\" & ActiveSheet.Name & ".csv"
+    
+    ' Xuất sheet hiện tại ra file CSV
+    ActiveSheet.Copy
+    ActiveWorkbook.SaveAs Filename:=filePath, FileFormat:=xlCSV, CreateBackup:=False
+    ActiveWorkbook.Close SaveChanges:=False
+End Sub
+
+	B3 : Đóng VBA, quay lại Excel.
+	B4 : Nhấn Alt + F8, chọn ExportActiveSheetToCSV, nhấn Run.
+Sheet hiện tại sẽ được xuất thành file CSV tại cùng thư mục với file Excel.
+
+Đóng VBA, quay lại Excel.
+Nhấn Alt + F8, chọn ExportActiveSheetToCSV, nhấn Run.
+Sheet hiện tại sẽ được xuất thành file CSV tại cùng thư mục với file Excel.
